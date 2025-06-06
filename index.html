@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuiltThis Software - AI-Powered Applications</title>
+    <meta name="description" content="We create AI-powered applications that simplify complex processes, reduce stress, and save you money.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                    <span class="logo-text">BuiltThis Software</span>
+                </div>
+                <nav class="nav-desktop">
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('mission')" class="nav-link">Mission</button>
+                    <button onclick="scrollToSection('founders')" class="nav-link">Founders</button>
+                    <button onclick="scrollToSection('applications')" class="nav-link">Applications</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link">Contact</button>
+                </nav>
+                <button onclick="scrollToSection('applications')" class="btn btn-outline nav-cta">Get Started</button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="4" x2="20" y1="12" y2="12"/>
+                        <line x1="4" x2="20" y1="6" y2="6"/>
+                        <line x1="4" x2="20" y1="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button onclick="scrollToSection('about')" class="mobile-nav-link">About</button>
+            <button onclick="scrollToSection('mission')" class="mobile-nav-link">Mission</button>
+            <button onclick="scrollToSection('founders')" class="mobile-nav-link">Founders</button>
+            <button onclick="scrollToSection('applications')" class="mobile-nav-link">Applications</button>
+            <button onclick="scrollToSection('contact')" class="mobile-nav-link">Contact</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Making Life <span class="gradient-text">Simpler</span> with AI
+                </h1>
+                <p class="hero-subtitle">
+                    We create AI-powered applications that simplify complex processes, reduce stress, and save you money.
+                </p>
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('applications')" class="btn btn-primary">
+                        Explore Our Apps
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12,5 19,12 12,19"/>
+                        </svg>
+                    </button>
+                    <button onclick="scrollToSection('about')" class="btn btn-outline">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="hero-bg-circle hero-bg-circle-1"></div>
+            <div class="hero-bg-circle hero-bg-circle-2"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">
+                    At BuiltThis Software, we leverage the power of generative AI to simplify complex processes in everyday life.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Simplify Complexity</h3>
+                    <p class="feature-description">
+                        We transform complicated processes into straightforward, manageable steps that anyone can follow.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Reduce Stress</h3>
+                    <p class="feature-description">
+                        Our applications are designed to alleviate the anxiety associated with major life decisions and purchases.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Save Money</h3>
+                    <p class="feature-description">
+                        By providing expert-level guidance, we help you make informed decisions that protect your investments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section section-gray">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-content">
+                    <h2 class="section-title">Our Mission</h2>
+                    <p class="mission-text">
+                        We believe people deserve to go about their day, a little bit easier than before. We create applications
+                        that help people through difficult processes, such as purchasing cars, buying houses and other things in
+                        life that are more complicated than they should be.
+                    </p>
+                    <p class="mission-text">
+                        We want to help people reduce the stress in their life by making things straightforward, save them money
+                        or take away the burden of dealing with complex information.
+                    </p>
+                </div>
+                <div class="mission-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="People collaborating" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders Section -->
+    <section id="founders" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Meet Our Founders</h2>
+            <div class="founders-grid">
+                <div class="founder-card">
+                    <div class="founder-image">
+                        <img src="mricketts.jpeg" alt="Matthew Ricketts" />
+                    </div>
+                    <div class="founder-info">
+                        <h3 class="founder-name">Matthew Ricketts</h3>
+                        <p class="founder-role">Co-Founder & Engineer</p>
+                        <p class="founder-description">
+                            Driven by building useful technology that solves real problems for people.
+                        </p>
+                        <a href="https://www.linkedin.com/in/matt-ricketts-9a0488b1/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="founder-card">
+                    <div class="founder-image">
+                        <img src="jknight.jpg" alt="Joshua Knight" />
+                    </div>
+                    <div class="founder-info">
+                        <h3 class="founder-name">Joshua Knight</h3>
+                        <p class="founder-role">Co-Founder & Engineer</p>
+                        <p class="founder-description">
+                            Passionate about creating technology that makes a meaningful difference in people's lives.
+                        </p>
+                        <a href="https://www.linkedin.com/in/joshua-knight-272856137/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="section section-purple">
+        <div class="container">
+            <h2 class="section-title text-center">Our Applications</h2>
+            <div class="applications-grid">
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Car Inspector App" />
+                    </div>
+                    <div class="app-content">
+                        <h3 class="app-title">Car Inspector</h3>
+                        <p class="app-description">
+                            People shouldn't need to pay for expensive pre-purchase inspections to feel as though they're not
+                            buying a lemon. We help to guide people through a set of pre-purchase inspection steps that aims to
+                            identify common issues with cars.
+                        </p>
+                        <p class="app-description">
+                            We tailor each inspection instruction to the vehicle the person is wanting to purchase, and make the
+                            instructions as specific to that vehicle as possible. We then produce a report that attempts to help
+                            the buyer gauge how much they should be aiming to purchase the car for, using information from the
+                            inspection and car's history.
+                        </p>
+                        <a href="https://car-inspector-vrcl-prd.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            Visit Car Inspector
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12,5 19,12 12,19"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="app-card app-card-coming-soon">
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h3 class="app-title">Coming Soon</h3>
+                        <p class="app-description">
+                            We're working on new applications to help simplify other complex life processes. Stay tuned for updates!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Interested in our applications or want to learn more about how we can help simplify complex processes?
+                </p>
+                <button onclick="window.open('mailto:builtthissoftware@gmail.com', '_blank')" class="btn btn-primary">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                    <span class="logo-text">BuiltThis Software</span>
+                </div>
+                <div class="footer-nav">
+                    <button onclick="scrollToSection('about')" class="footer-link">About</button>
+                    <button onclick="scrollToSection('mission')" class="footer-link">Mission</button>
+                    <button onclick="scrollToSection('founders')" class="footer-link">Founders</button>
+                    <button onclick="scrollToSection('applications')" class="footer-link">Applications</button>
+                    <button onclick="scrollToSection('contact')" class="footer-link">Contact</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © <span id="currentYear"></span> BuiltThis Software. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
